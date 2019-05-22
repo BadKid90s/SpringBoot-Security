@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: sinopacs
+  thymeleaf:
+    cache: false
+  http:
+    encoding:
+      charset: utf-8
+  security:
+    user:
+      name: user
+      password: 123456
+
+mybatis:
+  mapper-locations: classpath:mapperxml/*.xml
+  type-aliases-package: com.wry.security.pojo
+
+logging:
+  level:debug
+
+
